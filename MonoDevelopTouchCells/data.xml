@@ -2,26 +2,32 @@
 <items>
   <item>
     <title>Mono</title>
+    <description>Test Mono Description</description>
     <checked>false</checked>
   </item>
   <item>
     <title>MonoDevelop</title>
+    <description>Test MonoDevelop Description</description>
     <checked>true</checked>
   </item>
   <item>
     <title>MonoTouch</title>
+    <description>Test MonoTouch Description</description>
     <checked>false</checked>
   </item>
   <item>
     <title>Banshee</title>
+    <description>Test Banshee Description</description>
     <checked>true</checked>
   </item>
   <item>
     <title>F-Spot</title>
+    <description>Test Description</description>
     <checked>true</checked>
   </item>
   <item>
     <title>Tomboy</title>
+    <description>Test Description</description>
     <checked>true</checked>
   </item>
 </items>

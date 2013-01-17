@@ -36,6 +36,7 @@ namespace MonoDevelopTouchCells
 				
 				Item item = this.Data[indexPath.Row];
 				cell.Title = item.Title;
+				cell.Description = item.Description;
 				cell.Checked = item.Checked;
 			}
 			

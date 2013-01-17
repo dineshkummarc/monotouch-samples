@@ -59,6 +59,7 @@ namespace MonoDevelopTouchCells
 					select new Item {
 						Title = (string)c.Element("title"),
 						Checked = (bool)c.Element("checked"),
+						Description = (string)c.Element("description"),
 					}; 
 			
 			myTableView.Delegate = new TableViewDelegate();
