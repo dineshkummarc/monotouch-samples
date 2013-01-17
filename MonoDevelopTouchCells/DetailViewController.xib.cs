@@ -28,7 +28,7 @@ namespace MonoDevelopTouchCells
 		}
 		
 		public void ShowDetail (CustomCell cell) {
-			this.itemTitle.Text = cell.Title;
+			this.itemTitle.Text = "asdfasdfasdf"; //cell.Title;
 			
 			UIImage image = cell.Checked ? 
 				UIImage.FromFile ("images/checked.png") : UIImage.FromFile ("images/unchecked.png");
