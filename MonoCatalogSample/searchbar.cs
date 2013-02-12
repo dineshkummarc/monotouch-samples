@@ -1,5 +1,6 @@
 //
-// C# port of the searchbar sample
+// C# port of the searchbar sample 
+// 
 //
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;

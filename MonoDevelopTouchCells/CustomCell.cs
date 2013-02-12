@@ -15,6 +15,7 @@ namespace MonoDevelopTouchCells
 			set { this.TextLabel.Text = value; }
 		}
 		
+		public string Description  { get; set; }
 		public bool Checked { get; set; }
 		public UIButton CheckButton { get; set; }
 	
