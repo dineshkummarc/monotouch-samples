@@ -58,6 +58,8 @@ namespace Example_ContentControls.Screens.iPhone.Search
 			// create our table source and bind it to the table
 			tableSource = new WordsTableSource();
 			tblMain.Source = tableSource;
+			tableSource.Words = dictionary;
+			tblMain.ReloadData();
 			
 			// wire up the search button clicked handler to hide the keyboard
 			srchMain.SearchButtonClicked += (s, e) => { srchMain.ResignFirstResponder(); };

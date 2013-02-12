@@ -108,7 +108,7 @@ namespace MonoCatalog {
 				new Sample ("Segments", new SegmentViewController ()),
 				new Sample ("Searchbar", new SearchBarController ()),
 				new Sample ("TextField", new TextFieldController ()),
-				new Sample ("TextView", new TextViewController ()),
+				new Sample ("TextView", new TextViewController ("test")),
 				new Sample ("Toolbar", new ToolbarViewController ()),
 				new Sample ("Transitions", new TransitionViewController ()),
 				new Sample ("Web", new WebViewController ())

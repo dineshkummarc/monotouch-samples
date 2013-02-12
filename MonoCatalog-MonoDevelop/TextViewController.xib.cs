@@ -11,7 +11,14 @@ namespace MonoCatalog {
 	public partial class TextViewController : UIViewController {
 		UITextView textView;
 		NSObject obs1, obs2;
-		
+
+		public string _text;
+
+		public TextViewController(string text)
+		{
+			_text = text;
+		}
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
@@ -21,7 +28,7 @@ namespace MonoCatalog {
 				TextColor = UIColor.Black,
 				Font = UIFont.FromName ("Arial", 18f),
 				BackgroundColor = UIColor.White,
-				Text = "This code brought to you by ECMA 334, ECMA 335\n\n\nEmbrace the CIL!",
+				Text = _text,
 				ReturnKeyType = UIReturnKeyType.Default,
 				KeyboardType = UIKeyboardType.Default,
 				ScrollEnabled = true,
