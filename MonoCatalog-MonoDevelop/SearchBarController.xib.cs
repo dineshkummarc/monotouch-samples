@@ -21,7 +21,8 @@ namespace MonoCatalog {
 				bar.ResignFirstResponder ();
 			}
 		}
-		
+
+
 		public override void ViewDidLoad ()
 		{
 			base.ViewDidLoad ();
