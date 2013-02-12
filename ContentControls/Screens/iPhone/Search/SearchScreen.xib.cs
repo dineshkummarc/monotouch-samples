@@ -74,6 +74,7 @@ namespace Example_ContentControls.Screens.iPhone.Search
 		protected void LoadWords()
 		{
 			dictionary = File.ReadAllLines("Content/WordList.txt").ToList();
+
 		}
 
 		/// <summary>
