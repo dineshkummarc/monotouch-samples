@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoDevelopTouchCells", "MonoDevelopTouchCells.csproj", "{1254BB03-9156-4633-8298-74433DF4BB31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "monocatalog", "..\MonoCatalog-MonoDevelop\monocatalog.csproj", "{B757F754-E31A-4EBD-BDBD-0B86875D78DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -19,8 +21,16 @@ Global
 		{1254BB03-9156-4633-8298-74433DF4BB31}.Release|iPhone.Build.0 = Release|iPhone
 		{1254BB03-9156-4633-8298-74433DF4BB31}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
 		{1254BB03-9156-4633-8298-74433DF4BB31}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Debug|iPhone.Build.0 = Debug|iPhone
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Release|iPhone.ActiveCfg = Release|iPhone
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Release|iPhone.Build.0 = Release|iPhone
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{B757F754-E31A-4EBD-BDBD-0B86875D78DB}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = MonoDevelopTouchCells.csproj
+		StartupItem = ..\MonoCatalog-MonoDevelop\monocatalog.csproj
 	EndGlobalSection
 EndGlobal

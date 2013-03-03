@@ -35,6 +35,8 @@ namespace MonoCatalog {
 				ShowsCancelButton = true,
 			};
 			View.AddSubview (bar);
+
+
 		}
 		
 	}

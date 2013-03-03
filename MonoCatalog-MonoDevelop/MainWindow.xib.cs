@@ -11,6 +11,7 @@ using System.Collections;
 using MonoTouch.CoreGraphics;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using System.Drawing;
 
 namespace MonoCatalog {
 	
@@ -25,6 +26,8 @@ namespace MonoCatalog {
 	//
 	public partial class MainViewController : UITableViewController {
 		static NSString kCellIdentifier = new NSString ("MyIdentifier");
+		
+		UISearchBar bar;
 
 		struct Sample {
 			public string Title;
@@ -98,6 +101,12 @@ namespace MonoCatalog {
 			base.ViewDidLoad ();
 			Title = "MonoTouch UICatalog";
 			samples = new Sample [] {
+				new Sample ("AAP", new TextViewController ("test")),
+				new Sample ("ARP", new TextViewController ("test")),
+				new Sample ("ABC", new TextViewController ("test")),
+				new Sample ("BBC", new TextViewController ("test")),
+				new Sample ("BRC", new TextViewController ("test")),
+				new Sample ("WES", new TextViewController ("test"))/*,
 				new Sample ("Alerts", new AlertsViewController ()),
 				new Sample ("Address Book", new AddressBookController ()),
 				new Sample ("Buttons", new ButtonsViewController ()),
@@ -111,13 +120,35 @@ namespace MonoCatalog {
 				new Sample ("TextView", new TextViewController ("test")),
 				new Sample ("Toolbar", new ToolbarViewController ()),
 				new Sample ("Transitions", new TransitionViewController ()),
-				new Sample ("Web", new WebViewController ())
+				new Sample ("Web", new WebViewController ())*/
 			};
 
 			TableView.Delegate = new TableDelegate (this);
 			TableView.DataSource = new DataSource (this);
 	
 			NavigationItem.BackBarButtonItem = new UIBarButtonItem () { Title = "Back" };
+
+
+
+			var f = new RectangleF (0f, 0f, View.Bounds.Width, 44f);
+			bar = new UISearchBar (f){
+				Delegate = new SearchDelegate (),
+				ShowsCancelButton = true,
+			};
+			View.AddSubview (bar);
+		}
+
+		
+		class SearchDelegate : UISearchBarDelegate {
+			public override void SearchButtonClicked (UISearchBar bar)
+			{
+				bar.ResignFirstResponder ();
+			}
+			
+			public override void CancelButtonClicked (UISearchBar bar)
+			{
+				bar.ResignFirstResponder ();
+			}
 		}
 		
 	}
