@@ -12,6 +12,7 @@ using MonoTouch.CoreGraphics;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
 using System.Drawing;
+using System.Diagnostics;
 
 namespace MonoCatalog {
 	
@@ -98,6 +99,7 @@ namespace MonoCatalog {
 		
 		public override void ViewDidLoad ()
 		{
+			Debug.WriteLine("MainWindow.ViewDidLoad"); 
 			base.ViewDidLoad ();
 			Title = "MonoTouch UICatalog";
 			samples = new Sample [] {
@@ -141,12 +143,18 @@ namespace MonoCatalog {
 		
 		class SearchDelegate : UISearchBarDelegate {
 			public override void SearchButtonClicked (UISearchBar bar)
-			{
+			{ 
+				Debug.WriteLine("aaa");
 				bar.ResignFirstResponder ();
-			}
+			}  
 			
+			public override  void TextChanged  (UISearchBar searchBar, string searchText)
+			{ 
+				Debug.WriteLine("TextChanged"); 
+			} 
 			public override void CancelButtonClicked (UISearchBar bar)
 			{
+				Debug.WriteLine("aaa");
 				bar.ResignFirstResponder ();
 			}
 		}
